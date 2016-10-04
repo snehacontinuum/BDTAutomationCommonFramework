@@ -1,0 +1,62 @@
+[
+  {
+    "id": "as-a-user-i-can-login-to-its-portal-with-valid-credentials",
+    "description": "",
+    "name": "As a user I can login to ITS portal with valid credentials",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "as-a-user-i-can-login-to-its-portal-with-valid-credentials;verify-authorized-login;;2",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "description": "",
+        "name": "Verify authorized login",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "User can navigate to ITS Portal for \"DT\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {},
+            "matchedColumns": [
+              3
+            ]
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "Enter Login credentials \"automationBDD@continuum.net\" and  \"Abc@12345\"",
+            "keyword": "When ",
+            "line": 7,
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ]
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "Verify user is logged in",
+            "keyword": "And ",
+            "line": 8,
+            "match": {}
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "DemoSprint/LoginScenario.feature"
+  }
+]
