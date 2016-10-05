@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import continuum.cucumber.GenerateReport;
+import continuum.cucumber.HtmlEmailSender;
 import cucumber.api.testng.TestNGCucumberRunner;
 import cucumber.api.testng.TestNgReporter;
 import cucumber.api.CucumberOptions;
@@ -63,6 +65,8 @@ public Object[][] features() {
 @AfterClass(alwaysRun = true)
 public void tearDownClass() throws Exception {
     testNGCucumberRunner.finish();
+    GenerateReport.generateReport();
+ 	HtmlEmailSender.sendReport();
 }
 
 public static String getScenarioName(){
