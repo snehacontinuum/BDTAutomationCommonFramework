@@ -10,4 +10,4 @@ And Verify Dashboard is displayed
 
 Examples:
 |EmailId                    |Password|
-|sandeep.kale@dtsdm1.net |Abc@12345|
+|automationBDD@continuum.net |Abc@12345|
