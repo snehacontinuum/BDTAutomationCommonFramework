@@ -21,7 +21,28 @@ import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 
 public class StepDefinations extends PageFactory {
-		
+	@Given("^ITS portal is application is open$")
+	public void its_portal_is_application_is_open() throws Throwable {
+	    loginPage.openApplication();
+	}
+
+	@When("^Enter credentails \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void enter_credentails_and(String emailId, String pwd) throws Throwable {
+   loginPage.login(emailId,pwd);
+	}
+
+
+
+	@Then("^User to is logged in to Portal$")
+	public void user_to_is_logged_in_to_Portal() throws Throwable {
+	   homePage.verifyLoggedId();
+	}
+
+	@Then("^Verify Dashboard is displayed$")
+	public void verify_Dashboard_is_displayed() throws Throwable {
+	   
+	}
+
 	
 	
 }
