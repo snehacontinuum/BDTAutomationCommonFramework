@@ -58,7 +58,7 @@ formatter.examples({
     {
       "id": "as-a-user-i-want-to-login-to-its-portal;login-test;;2",
       "cells": [
-        "sandeep.kale@dtsdm1.net",
+        "automationBDD@continuum.net",
         "Abc@12345"
       ],
       "line": 13
@@ -85,7 +85,7 @@ formatter.step({
   "line": 5
 });
 formatter.step({
-  "name": "Enter credentails \"sandeep.kale@dtsdm1.net\" and \"Abc@12345\"",
+  "name": "Enter credentails \"automationBDD@continuum.net\" and \"Abc@12345\"",
   "keyword": "When ",
   "line": 6,
   "matchedColumns": [
@@ -107,38 +107,19 @@ formatter.match({
   "location": "StepDefinations.its_portal_is_application_is_open()"
 });
 formatter.result({
-  "duration": 4645591496,
+  "duration": 4827862684,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "sandeep.kale@dtsdm1.net",
+      "val": "automationBDD@continuum.net",
       "offset": 19
     },
     {
       "val": "Abc@12345",
-      "offset": 49
+      "offset": 53
     }
   ],
   "location": "StepDefinations.enter_credentails_and(String,String)"
-});
-formatter.result({
-  "duration": 22794317901,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinations.user_to_is_logged_in_to_Portal()"
-});
-formatter.result({
-  "duration": 5279090134,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinations.verify_Dashboard_is_displayed()"
-});
-formatter.result({
-  "duration": 46613,
-  "status": "passed"
-});
 });

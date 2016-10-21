@@ -49,7 +49,7 @@ static RemoteWebDriver driver=null;
 
 @BeforeClass(alwaysRun = true)
 public void setUpClass() throws Exception {
-	SeleniumServerUtility.startServer();
+	
     testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
 }
 
@@ -91,7 +91,7 @@ public void tearDownClass() throws Exception {
     testNGCucumberRunner.finish();
     GenerateReport.generateReport();
  	HtmlEmailSender.sendReport();
- 	SeleniumServerUtility.killSeleniumServer();
+ 	
 }
 
 public static String getScenarioName(){
